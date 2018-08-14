@@ -13,10 +13,10 @@ name:                hello-haskell
 version:             0.1.0.0
 
 -- A short (one-line) description of the package.
--- synopsis:            
+synopsis:            Haskell Book Example
 
 -- A longer description of the package.
--- description:         
+description:         Haskell Book Example
 
 -- The license under which the package is released.
 license:             BSD3
@@ -60,8 +60,11 @@ executable hello-haskell
   build-depends:       base >=4.9 && <4.10
   
   -- Directories containing source files.
-  -- hs-source-dirs:      
+  hs-source-dirs:      src 
   
   -- Base language which the package is written in.
   default-language:    Haskell2010
+
+  -- GHC options
+  ghc-options:         -Wall -fwarn-tabs
   
